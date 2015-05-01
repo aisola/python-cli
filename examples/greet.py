@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import sys
+sys.path.append('../')
 import cli
 
 # the action of the program
