@@ -52,6 +52,6 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
-# Cloud9 IDE
+# IDEs
 .c9/
-
+.idea/
