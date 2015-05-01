@@ -14,7 +14,7 @@ class Flag(object):
 
     def __init__(self, type, name, default=None, usage=""):
         # only 4 kinds of flag
-        assert type in [F_STRING, F_BOOL, F_INTEGER, F_FLOAT]
+        assert type in [STRING, BOOL, INTEGER, FLOAT]
         self.type = type
         # names are defined by a comma separated string
         self.name = name.split(",")
@@ -22,12 +22,12 @@ class Flag(object):
             self.default = default
         else:
             # the default `default` is different for each flagtype
-            if self.type == F_STRING:
+            if self.type == STRING:
                 self.default = ""
-            elif self.type == F_BOOL:
+            elif self.type == BOOL:
                 self.default = False
-            elif self.type == F_INTEGER:
+            elif self.type == INTEGER:
                 self.default = 0
-            elif self.type == F_FLOAT:
+            elif self.type == FLOAT:
                 self.default = 0.0
         self.usage = usage
