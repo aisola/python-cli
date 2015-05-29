@@ -1,9 +1,9 @@
 # Setup File for Python CLI
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='Python CLI',
-    version="1.0",
+    version="0.9",
     author='Abram C. Isola',
     author_email='abram@isola.mn',
     packages=['cli'],
